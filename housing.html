@@ -8,6 +8,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    
+     <style>
+      #map {
+        width: 500px;
+        height: 400px;
+        height: 100%; 
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -21,13 +30,32 @@
       <a href="dining.html" class="btn"> Dining</a>
        <a href="administration.html" class="btn"> Administration</a>
     
-      <p> Whether on campus or off campus, Wash U's housing programs provide a great opportunity for students to interact with each other and come into their own away from home. Wherever you live. Wash U is dedicated to making your housing experience as fulfilling as possible.  </p>
+      <p> Whether on campus or off campus, Wash U's housing programs provide a great opportunity for students to interact with each other and come into their own away from home. Wherever you live, Wash U is dedicated to making your housing experience as fulfilling as possible.  </p>
 
     </section>
 
     <section class="main-content">
       <h2>On Campus Housing</h2>
-      <p> Overview of Questions</p>
+      <p> On Campus housing provides a closely-knit community. Known as the "South 40" as it is located on 40 acres south of the Danforth Camous, there are more than 26 Residential Halls to choose from. See this map for all the options. </p>
+       <div id="map"></div>
+     <script>
+            <div style="height: 100%; width: 100%; position: absolute; "><div id="map"></div> 
+            </div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="<iframe src="<iframe src="https://www.google.com/maps/d/embed?mid=zlsRX9tJEcoM.kr-ayxQIsvfY" width="640" height="480"></iframe>"
+        async defer></script>
+      
+      
+ 
+      
        <p><img src="http://placehold.it/800x450?text=List+of+Questions+and+Answers+for+On+Campus+Housing"></p>
          <h3> Off Campus Housing</h3>
          <p> Overview of Questions</p>
