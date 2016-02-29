@@ -9,12 +9,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
+   <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
   <body>
     <section class="page-header">
       <h1 class="project-name">WELCOME TO WASH U!</h1>
       <h2 class="project-tagline"> Breathe Out and Come In</h2>
   
- <p> a href= "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.0039510313777!2d-90.31298488465698!3d38.64878947960967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b5460f9c0fcf%3A0x94fa9481183c7669!2sWashington+University+in+St.+Louis!5e0!3m2!1sen!2sus!4v1456761994424" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"</p>
+
   <p><img src="http://placehold.it/600x150?text=Welcome+Message"></p>
 
     </section>
@@ -35,7 +41,18 @@
        </p>
        </section>
   </section>
-  
+  <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.0039510313777!2d-90.31298488465698!3d38.64878947960967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b5460f9c0fcf%3A0x94fa9481183c7669!2sWashington+University+in+St.+Louis!5e0!3m2!1sen!2sus!4v1456761994424" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"
+        async defer></script>
   </body> 
 
 </html>
