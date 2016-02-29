@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color:#303030; }
+  color:#3B3B3B; }
 
 a {
   color: #1e6bb8;
@@ -112,7 +112,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #303030; }
+  color: #3B3B3B; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
